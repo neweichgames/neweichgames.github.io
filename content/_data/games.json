@@ -1,0 +1,73 @@
+[
+	{
+		"name": "House of Hazards",
+		"thumb": "images/games/HOHThumb.png",
+		"title": "images/games/HOHTitle.png",
+		"icon": "images/games/HOHIcon.png",
+		"description": "Finish tasks around the house while avoiding crazy hazards. Play up to 4 players with friends or computers.",
+		"links": {
+			"poki": "https://poki.com/en/g/house-of-hazards",
+			"crazygames": "https://www.crazygames.com/game/house-of-hazards"
+		}
+	},
+	{
+		"name": "Rooftop Snipers 2",
+		"thumb": "images/games/RS2Thumb.png",
+		"title": "images/games/RS2Title.png",
+		"icon": "images/games/RS2Icon.png",
+		"description": "Sequel to the original Rooftop Snipers, a chaotic two button local multiplayer game. Grab a friend or play the computer in new customizations.",
+		"links": {
+			"appstore": "http://itunes.apple.com/app/id1477691975",
+			"poki": "https://poki.com/en/g/rooftop-snipers-2"
+		}
+	},
+	{
+		"name": "Getaway Shootout",
+		"thumb": "images/games/GSThumb.png",
+		"title": "images/games/GSTitle.png",
+		"icon": "images/games/GSIcon.png",
+		"description": "Getaway Shootout is a chaotic race to the finish game. Race against the computer or grab a friend to prove who is best. Pick up power ups and weapons along the way and navigate through tough maps.",
+		"links": {
+			"appstore": "http://itunes.apple.com/app/id1410580697",
+			"playstore": "https://play.google.com/store/apps/details?id=com.NewEichGames.GetawayShootout",
+			"poki": "https://poki.com/en/g/getaway-shootout",
+			"crazygames": "https://www.crazygames.com/game/getaway-shootout"
+		}
+	},
+	{
+		"name": "Ping Pong Chaos",
+		"thumb": "images/games/PPCThumb.png",
+		"title": "images/games/PPCTitle.png",
+		"icon": "images/games/PPCIcon.png",
+		"description": "Ping Pong Chaos is a chaotic two button local multiplayer game. Challenge your friends side by side or play the computer in an intense ping pong match. Endure challenging customizations and make your own customization playlist.",
+		"links": {
+			"appstore": "https://itunes.apple.com/app/id1278673242",
+			"poki": "https://poki.com/en/g/ping-pong-chaos",
+			"crazygames": "https://www.crazygames.com/game/ping-pong-chaos"
+		}
+	},
+	{
+		"name": "Rooftop Snipers",
+		"thumb": "images/games/RSThumb.png",
+		"title": "images/games/RSTitle.png",
+		"icon": "images/games/RSIcon.png",
+		"description": "Rooftop Snipers is a chaotic two button local multiplayer game. Challenge your friends side by side or play the computer. Shoot your opponent off the map to win.",
+		"links": {
+			"appstore": "https://itunes.apple.com/app/id1189491293",
+			"poki": "https://poki.com/en/g/rooftop-snipers",
+			"crazygames": "https://www.crazygames.com/game/rooftop-snipers"
+		}
+	},
+	{
+		"name": "Tube Jumpers",
+		"thumb": "images/games/TJThumb.png",
+		"title": "images/games/TJTitle.png",
+		"icon": "images/games/TJIcon.png",
+		"description": "Tube Jumpers is local multiplayer game with your friends packed with action. The last one to stay on the tubes wins. Watch out for miscellaneous objects while watching your back from other players.",
+		"links": {
+			"appstore": "https://appsto.re/us/1_J0cb.i",
+			"poki": "https://poki.com/en/g/tube-jumpers",
+			"crazygames": "https://www.crazygames.com/game/tube-jumpers"
+		}
+	}
+]

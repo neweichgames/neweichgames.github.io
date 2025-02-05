@@ -1,0 +1,29 @@
+module.exports = function(eleventyConfig) {
+  
+  eleventyConfig.addPassthroughCopy("content/images");
+  eleventyConfig.addPassthroughCopy("content/fonts");
+  eleventyConfig.addPassthroughCopy("content/style/*.css");
+  eleventyConfig.addPassthroughCopy("content/posts/pics");
+
+  // Custom date filter for Post dates
+  eleventyConfig.addFilter("postDate", date => {
+    if (date === undefined)
+      return date;
+
+    const monthNames = [
+      "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+    const day = date.getUTCDate();
+    const paddedDay = day < 10 ? `0${day}` : day;
+    return `${monthNames[date.getUTCMonth()]} ${paddedDay}, ${date.getUTCFullYear()}`;
+  });
+
+  return {
+    dir: {
+      input: "content",
+      layouts: "layouts",
+      output: "_site"
+    }
+  }
+};

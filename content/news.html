@@ -1,0 +1,16 @@
+<div class="mb-5">
+{% if collections.post %}
+    <hr>
+    
+    {% for post in collections.post reversed %}
+    <div class="news-headline" onclick="location.href='{{ post.url }}'">
+        <p class="mb-0">{{ post.page.date | postDate }}</p>
+        <h1>{{post.data.title}}</h1>
+    </div>
+    <hr>
+    {% endfor %}
+
+{% else %}
+    <p class="py-5 text-center">No news posts</p>
+{% endif %}
+</div>
