@@ -3,7 +3,7 @@
 		"name": "House of Hazards",
 		"description": "Finish tasks around the house while avoiding crazy hazards. Play up to 4 players with friends or computers.",
 		"info":{
-			"date-published": "",
+			"date-published": "9/10/2020",
 			"credits": {
 				"Music": "Red Forge",
 				"Artwork": "Mary Eichler"
@@ -21,7 +21,7 @@
 		"name": "Rooftop Snipers 2",
 		"description": "Sequel to the original Rooftop Snipers, a chaotic two button local multiplayer game. Grab a friend or play the computer in new customizations.",
 		"info":{
-			"date-published": "",
+			"date-published": "8/30/2019",
 			"credits": {
 				"Music": "Red Forge"
 			}
@@ -41,7 +41,7 @@
 		"name": "Getaway Shootout",
 		"description": "Getaway Shootout is a chaotic race to the finish game. Race against the computer or grab a friend to prove who is best. Pick up power ups and weapons along the way and navigate through tough maps.",
 		"info":{
-			"date-published": "",
+			"date-published": "8/27/2018",
 			"credits": {
 				"Music": "Red Forge"
 			}
@@ -63,7 +63,7 @@
 		"name": "Ping Pong Chaos",
 		"description": "Ping Pong Chaos is a chaotic two button local multiplayer game. Challenge your friends side by side or play the computer in an intense ping pong match. Endure challenging customizations and make your own customization playlist.",
 		"info":{
-			"date-published": "",
+			"date-published": "9/14/2017",
 			"credits": {
 				"Music": "TheFatRat"
 			}
@@ -84,7 +84,7 @@
 		"name": "Rooftop Snipers",
 		"description": "Rooftop Snipers is a chaotic two button local multiplayer game. Challenge your friends side by side or play the computer. Shoot your opponent off the map to win.",
 		"info":{
-			"date-published": "",
+			"date-published": "1/7/2017",
 			"credits": {
 				"Music": "TheFatRat"
 			}
@@ -102,7 +102,7 @@
 		"name": "Tube Jumpers",
 		"description": "Tube Jumpers is local multiplayer game with your friends packed with action. The last one to stay on the tubes wins. Watch out for miscellaneous objects while watching your back from other players.",
 		"info":{
-			"date-published": ""
+			"date-published": "6/9/2016"
 		},
 		"media": {
 			"prefix": "TJ",

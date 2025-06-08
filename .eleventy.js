@@ -1,4 +1,6 @@
 const embedYouTube = require("eleventy-plugin-youtube-embed");
+const fs = require("fs");
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
   
@@ -24,6 +26,15 @@ module.exports = function(eleventyConfig) {
     const day = date.getUTCDate();
     const paddedDay = day < 10 ? `0${day}` : day;
     return `${monthNames[date.getUTCMonth()]} ${paddedDay}, ${date.getUTCFullYear()}`;
+  });
+
+  eleventyConfig.addFilter("getImagesFromFolder", function (relativeFolder) {
+    const fullPath = path.resolve(path.join("content/", relativeFolder));
+    if (!fs.existsSync(fullPath)) return [];
+
+    return fs.readdirSync(fullPath)
+      .filter(file => /\.(png|jpe?g|gif|webp)$/i.test(file))
+      .map(file => `/${path.join(relativeFolder, file)}`.replace(/\\/g, "/"));
   });
 
   return {
