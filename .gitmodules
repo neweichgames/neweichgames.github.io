@@ -1,3 +1,3 @@
 [submodule "content/posts"]
 	path = content/posts
-	url = git@github.com-neweichgames:neweichgames/website-posts.git
+	url = git@github.com:neweichgames/website-posts.git
