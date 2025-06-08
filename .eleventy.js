@@ -1,5 +1,9 @@
+const embedYouTube = require("eleventy-plugin-youtube-embed");
+
 module.exports = function(eleventyConfig) {
   
+  eleventyConfig.addPlugin(embedYouTube);
+
   eleventyConfig.addPassthroughCopy("content/images");
   eleventyConfig.addPassthroughCopy("content/fonts");
   eleventyConfig.addPassthroughCopy("content/style/*.css");
