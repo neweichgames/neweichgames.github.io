@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
   repository_dispatch:
-    types: ["Posts Push"]
+    types: [posts_push]
 
   workflow_dispatch:
 
