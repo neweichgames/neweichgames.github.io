@@ -1,0 +1,39 @@
+---
+pagination:
+  data: games
+  size: 1
+  alias: game
+permalink: "games/{{ game.media.prefix | slugify }}/"
+---
+<h1>Press kit - {{game.name}}</h1>
+<h3>Factsheet</h3>
+<p><b>Published: </b> {{game.info.date-published}}</p>
+<p><b>Developer:</b> New Eich Games</p>
+{% if game.info.credits %}
+{% for c in game.info.credits %}
+<p><b>{{c[0]}}:</b> {{c[1]}}</p>
+{% endfor %}
+{% endif %}
+
+<h3>Media</h3>
+<h5>Branding</h5>
+{% assign path = "images/games/" | append: game.media.prefix | append: "/brand/" %}
+{% assign images = path | getImagesFromFolder %}
+{% for img in images %}
+<img style="max-width: 100%" src="{{img}}">
+{% endfor %}
+
+<h5>Screenshots</h5>
+{% assign path = "images/games/" | append: game.media.prefix | append: "/screenshots/" %}
+{% assign images = path | getImagesFromFolder %}
+{% for img in images %}
+<img style="max-width: 100%" src="{{img}}">
+{% endfor %}
+
+{% if game.media.videos %}
+<h5>Videos</h5>
+{% for v in game.media.videos %}
+<p><a href="{{v[1]}}">{{v[1]}}}</p>
+{% endfor %}
+{% endif %}
+
