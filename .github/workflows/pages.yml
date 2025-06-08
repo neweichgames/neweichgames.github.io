@@ -24,7 +24,7 @@ jobs:
       - name: Checkout posts
         uses: actions/checkout@v4
         with:
-          repository: 'git@github.com:neweichgames/website-posts.git'
+          repository: 'neweichgames/website-posts'
           path: ./content/pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
