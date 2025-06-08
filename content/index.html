@@ -5,7 +5,7 @@
 <div id="icon-container" class="game-icons" style="display: flex;">
     {% for game in games %}
     <div>
-      <img onclick="playGame({{forloop.index0}})" class="icon" src="{{game.icon}}">
+      <img onclick="playGame({{forloop.index0}})" class="icon" src="/images/games/{{game.media.prefix}}/brand/icon-sm.png">
     </div>
     {% endfor %}
 </div>
@@ -17,11 +17,11 @@
   {% assign mod = forloop.index | modulo:2 %}
 	<div class="row game-row {% if mod == 0 %}odd{% endif %}" style="display: flex;">
   	<div class="col-md col-thumb">
-    	<img class="thumb" src="{{game.thumb}}">
+    	<img class="thumb" src="/images/games/{{game.media.prefix}}/brand/thumb.png">
   	</div>
      	
    	<div class="col-md">
-    	<img class="title" src="{{game.title}}">
+    	<img class="title" src="/images/games/{{game.media.prefix}}/brand/title.png">
     	<p class="description">{{game.description}}</p>
     	<div class="buttons">
       		<!-- <a class="btn btn-primary press-kit" href="" role="button" style="font-size: 22px;">Press kit</a> -->
@@ -64,7 +64,7 @@
 <script type="text/javascript">
   const gamePlatforms = ["appstore", "playstore", "poki", "crazygames"];
   const names = [{% for game in games %} {{game.name | jsonify}}, {% endfor %}];
-  const icons = [{% for game in games %} {{game.icon | jsonify}}, {% endfor %}];
+  const prefixes = [{% for game in games %} {{game.media.prefix | jsonify}}, {% endfor %}];
   const links = [{% for game in games %} {{game.links | jsonify}}, {% endfor %}];
 
   function playGame(gameId){
@@ -75,7 +75,7 @@
 
     gameModal.querySelector("h1").textContent = `Play ${names[gameId]}`;
     gameModal.querySelector("p").textContent = `Play ${names[gameId]} via the following platforms:`;
-    gameModal.querySelector(".modal-header img").setAttribute("src", icons[gameId]);
+    gameModal.querySelector(".modal-header img").setAttribute("src", "/images/games/" + prefixes[gameId] + "/brand/icon-sm.png");
 
     const platformLinks = document.querySelector("#gameModal .platform-links");
 
