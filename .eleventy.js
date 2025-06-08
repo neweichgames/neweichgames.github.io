@@ -5,6 +5,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("content/style/*.css");
   eleventyConfig.addPassthroughCopy("content/posts/pics");
 
+  // Use this so posts are able to be found
+  eleventyConfig.setUseGitIgnore(false);
+
   // Custom date filter for Post dates
   eleventyConfig.addFilter("postDate", date => {
     if (date === undefined)
