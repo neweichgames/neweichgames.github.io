@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("content/images");
   eleventyConfig.addPassthroughCopy("content/fonts");
   eleventyConfig.addPassthroughCopy("content/style/*.css");
-  eleventyConfig.addPassthroughCopy("content/posts/pics");
+  eleventyConfig.addPassthroughCopy("content/news/pics");
 
   // Use this so posts are able to be found
   eleventyConfig.setUseGitIgnore(false);
