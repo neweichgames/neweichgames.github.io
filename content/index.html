@@ -15,7 +15,7 @@
   
   {% for game in games %}	
   {% assign mod = forloop.index | modulo:2 %}
-	<div class="row game-row {% if mod == 0 %}odd{% endif %}" style="display: flex;">
+	<div id="game-{{game.media.prefix}}" class="row game-row {% if mod == 0 %}odd{% endif %}" style="display: flex;">
   	<div class="col-md col-thumb">
     	<img class="thumb" src="/images/games/{{game.media.prefix}}/brand/thumb.png">
   	</div>

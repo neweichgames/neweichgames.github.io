@@ -8,6 +8,10 @@
 	src: url('/fonts/VT323-Regular.ttf');
 }
 
+html{
+	scroll-padding-top: 175px;
+}
+
 body {
 /*  color: #333333;*/
 	margin-top: 165px;
