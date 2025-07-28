@@ -233,7 +233,7 @@ footer{
 @media (max-width: 767.98px) {
 
 	body{
-		margin-top: 85px;
+		margin-top: 85px !important;
 	}
 
 	#title-img{
